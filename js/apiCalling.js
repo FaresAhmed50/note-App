@@ -15,28 +15,6 @@
 // For now, I'll use a placeholder that clearly indicates usage.
 const BASE_URL = 'https://0d4c8194-63ba-411a-a5c5-405dfb919883.mock.pstmn.io/';
 
-const api = {
-
-  // Update a note
-  async updateNote(id, note) {
-    // try {
-    //   const response = await fetch(`${BASE_URL}/notes/${id}`, {
-    //     method: 'PUT',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(note)
-    //   });
-    //   return await response.json();
-    // } catch (error) { ... }
-
-    // Mock Response
-    console.log('Updating note:', id, note);
-    return new Promise(resolve => setTimeout(() => resolve({ id, ...note, updatedAt: new Date().toISOString() }), 500));
-  },
-
-
-};
-
-
 // single res
 export async function getAllNotes() {
 
